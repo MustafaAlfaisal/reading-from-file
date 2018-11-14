@@ -17,16 +17,16 @@ function processFile(data) {
     console.log('The size of the file is ' + size + ' rows')
     // list all flowers that starts with S Letter
     let startsWithS = sData.filter((flower) => flower.startsWith("S"));
-    console.log("the flowers that starts with S is: " + "\n" + startsWithS);
+    console.log("The flowers that starts with S is: " + "\n" + startsWithS);
     // list all flowers that not starts with S Letter
     let nStartsWithS = _.without(sData, startsWithS)
-    console.log("the flowers that not starts with S is: " + "\n" + nStartsWithS);
+    console.log("The flowers that not starts with S is: " + "\n" + nStartsWithS);
     // list all flowers that starts with S Letter
     let startsWithM = sData.filter((flower) => flower.startsWith("M"));
-    console.log("the flowers that starts with M is: " + "\n" + startsWithM);
-
-    // let length = _.map(sData, function(flower){ return flower.length == 5; });
-    // console.log("the flower name that length is 5 char is: "+ length)
+    console.log("The flowers that starts with M is: " + "\n" + startsWithM);
+    // list all the flower name length is 5
+    let length = sData.filter((flower) => flower.length == 5)
+    console.log("the flower name that length is 5 char is: " + "\n" + length)
 
 }
 
